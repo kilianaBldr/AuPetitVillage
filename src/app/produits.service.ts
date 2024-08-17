@@ -38,7 +38,7 @@ export class ProduitsService {
     },
     { id: 4,
       name: "Panoramix",
-      image:  "/assets/images/figurine-panoramix.jpg",
+      image:  "/assets/images/Figurine-Panoramix.jpg",
       description: "Druide, inventeur de potions en tous genres et détenteur de la sagesse Gauloise.",
       details: "figurine faites main en bois et painte à la main",
       prix: 18.20,
