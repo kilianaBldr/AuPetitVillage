@@ -1,0 +1,9 @@
+<section>
+    <div *ngIf="produit">
+        <h1>{{produit.name}}</h1>
+        <img [src]="produit.image" alt="{{produit.name}}">
+        <p>{{produit.description}}</p>
+        <p>{{produit.details}}</p>
+        <p>Prix : {{produit.prix | currency:'EUR'}}</p>
+    </div>
+</section>

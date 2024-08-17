@@ -1,24 +1,28 @@
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
-<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
-<!-- * * * * * * * * * * and can be replaced.  * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * Delete the template below * * * * * * * * * -->
-<!-- * * * * * * * to get started with your project! * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
-<main class="main">
-    <div class="content">
-     
+<main>
+    <div class="home">
+        <section class="container presentation">
+            <p class="text-center pt-5">Au petit village, est une entreprise qui confectionne des figurines inspirées de la bande
+                dessinée Astérix et Obélix.<br>Des figurines faites main!
+            </p>
+        </section>
+        <section class="container pt-md-5 produit">
+                <h2 class="text-center my-5">Nos produits</h2>
+                <div class="container">
+                    <div class="col">
+                        <div class="row-sm-6 d-flex justify-content-around pb-5">
+                            <div *ngFor="let produit of produits" class="card">
+                                <h2 class="card-title text-center">{{produit.name}}</h2>
+                                <img src="{{produit.image}}" class="card-img-center align-self-center" alt="">
+                                <div class="card-body text-center">
+                                  <p class="card-text">{{produit.description}}</p>
+                                  <p class="card-text">Prix : {{produit.prix | currency:'EUR'}}</p>
+                                  <button (click)="detailProduit(produit.id)" type="button" class="btn btn-dark">En Savoir plus</button>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
     </div>
   </main>
-  
-  <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-  <!-- * * * * * * * * * * * The content above * * * * * * * * * * * * -->
-  <!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * * -->
-  <!-- * * * * * * * * * * and can be replaced.  * * * * * * * * * * * -->
-  <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-  <!-- * * * * * * * * * * End of Placeholder  * * * * * * * * * * * * -->
-  <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-  
-  
