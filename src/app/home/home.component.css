@@ -1,9 +1,19 @@
 .home {
     background-color: #f9d0a3;
 }
+h2 {
+    color: #DA001E;
+}
 .card {
     width: 30%;
 }
+
+.card :hover {
+    cursor: pointer;
+}
 img {
     width: 25%;
+}
+h3 {
+    color: #fdd90b;
 }

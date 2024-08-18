@@ -9,6 +9,8 @@ import { Router } from '@angular/router';
 })
 export class HomeComponent implements OnInit {
   produits: produit[] = [];
+  FilterPipe: string = "";
+  ordreTri: string = 'Croissant';
 constructor (private ProduitsService: ProduitsService, private router: Router) {}
 
 ngOnInit(): void {

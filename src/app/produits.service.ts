@@ -14,13 +14,14 @@ export interface produit {
 })
 
 export class ProduitsService {
+
   produits: produit[]= [
     { id: 1,
       name: "Obélix",
       image: "/assets/images/figurine Obelix.jpg",
       description: "Astérix de nature espiègle, il aime beaucoup taquiner ses ennemis.",
       details: "figurine faites main en bois et painte à la main",
-      prix: 15.89,
+      prix: 15.8,
     },
     { id: 2,
       name: "Idéfix",
