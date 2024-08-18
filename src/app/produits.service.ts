@@ -50,7 +50,7 @@ export class ProduitsService {
   getProduits(): produit[]{
     return this.produits;
   }
-  getProduit(id: number): produit | undefined {
-    return this.produits.find((produits) => produits.id === id);
+  getProduitId(id: number): produit | undefined {
+    return this.produits.find(produits => produits.id === id);
   }
 }

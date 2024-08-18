@@ -1,9 +1,13 @@
-<section>
-    <div *ngIf="produit">
-        <h1>{{produit.name}}</h1>
-        <img [src]="produit.image" alt="{{produit.name}}">
-        <p>{{produit.description}}</p>
-        <p>{{produit.details}}</p>
-        <p>Prix : {{produit.prix | currency:'EUR'}}</p>
-    </div>
-</section>
+<main>
+    <section class="container  d-flex justify-content-center">
+        <div *ngIf="produit mx-auto">
+            <h1>{{produit.name}}</h1>
+                <img [src]="produit.image" alt="{{produit.name}}" class="rounded mx-auto border border-black">
+            <div class="text-center text">
+                <p>{{produit.description}}</p>
+                <p>{{produit.details}}</p>
+                <p>Prix : {{produit.prix}}</p>
+            </div>
+        </div>
+    </section>
+</main>

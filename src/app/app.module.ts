@@ -10,6 +10,7 @@ import { FooterComponent } from './footer/footer.component';
 import { FilterPipe } from './filter.pipe';
 import { FormsModule } from '@angular/forms';
 import { OrdreTriPipe } from './ordre-tri.pipe';
+import { ProposComponent } from './propos/propos.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,9 @@ import { OrdreTriPipe } from './ordre-tri.pipe';
     ProduitComponent,
     FooterComponent,
     FilterPipe,
-    OrdreTriPipe
+    OrdreTriPipe,
+    ProposComponent,
+   
   ],
   imports: [
     BrowserModule,
